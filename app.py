@@ -387,7 +387,7 @@ with tab4:
         return colors.get(val, "")
 
     st.dataframe(
-        display_df.style.applymap(color_type, subset=["Type"]),
+        display_df.style.map(color_type, subset=["Type"]),
         use_container_width=True, hide_index=True, height=600
     )
 
